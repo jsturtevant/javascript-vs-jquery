@@ -30,10 +30,11 @@
     <script>
         $(document).ready(function() {
             
-            var html = $('#main li.success-text').html();
-            console.log(html);
+            var el = $('#main li.success-text');
+            
+            el.removeClass('success-text');
+            el.addClass('warning');
         });
     </script>
 </body>
-
 </html>

@@ -28,8 +28,10 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             
-            var html = document.querySelector('#main li.success-text').innerHTML;
-            console.log(html);
+            var el = document.querySelector('#main li.success-text');
+           
+            el.classList.remove('success-text');
+            el.classList.add('warning');
         });
     </script>
 </body>

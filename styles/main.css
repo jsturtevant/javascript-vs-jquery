@@ -7,3 +7,8 @@ body {
 #main li.success-text{
     color: green;
 }
+
+
+.warning{
+    color: red;
+}
