@@ -1,22 +1,39 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>projects</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Hello, jQuery!</h1>
 
-    <script   src="http://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script> 
-    <script >
+    <section id="main">
+        <h1>jQuery is makes this easy!</h1>
+        <ul>
+            <li>element</li>
+            <li class="success-text">selection</li>
+            <li>is</li>
+            <li>made easy.</li>
+        </ul>
+        
+        <p class="sucess-text">Check out the <a href="http://api.jquery.com/">jQuery documentation</a> for more info.</p>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+    crossorigin="anonymous"></script>
+    <script>
         $(document).ready(function() {
-            // Handler for .ready() called.
-            console.log("document ready!")
+            
+            var html = $('#main li.success-text').html();
+            console.log(html);
         });
     </script>
-  </body>
+</body>
+
 </html>

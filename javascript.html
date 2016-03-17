@@ -13,10 +13,23 @@
 <body>
     <h1>Hello, JavaScript!</h1>
     
+    <section id="main">
+        <h1>Modern JavaScript makes this easy too!</h1>
+        <ul>
+            <li>element</li>
+            <li class="success-text">selection</li>
+            <li>is</li>
+            <li>made easy.</li>
+        </ul>
+        
+        <p class="sucess-text">Check out the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript documentation</a> for more info.</p>
+    </section>
     
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            console.log('document ready!');
+            
+            var html = document.querySelector('#main li.success-text').innerHTML;
+            console.log(html);
         });
     </script>
 </body>
