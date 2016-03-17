@@ -1,0 +1,32 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch index.html",
+			"type": "chrome",
+			"request": "launch",
+			"file": "${workspaceRoot}/index.html",
+            "cwd": "${workspaceRoot}",
+            "userDataDir": "C://Users//jstur//temp"
+		},
+		{
+			"name": "Launch",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:9000/",//Change to whatever you homepage is
+        "runtimeArgs": [
+            "--new-window", //Open in new window
+            "--user-data-dir=C://Users//jstur//temp"//Can be any directory. 
+        ],
+        "webRoot": "${workspaceRoot}", //The directory that contains js, ts and map files,
+        "cwd": "${workspaceRoot}",
+        "sourceMaps": false
+		},
+		{
+			"name": "Attach",
+			"type": "chrome",
+			"request": "attach",
+			"port": 9222
+		}
+	]
+}
